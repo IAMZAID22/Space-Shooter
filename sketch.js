@@ -9,11 +9,11 @@ as  = loadImage('asteroid.png');
 function setup(){
   createCanvas(800,600);
  
-  pla = createSprite(600,500);
+  pla = createSprite(200,500);
   pla.addImage(plI);
   pla.scale = 0.2;
   
-  pla2 = createSprite(200,500);
+  pla2 = createSprite(600,500);
   pla2.addImage(plI1);
   pla2.scale = 0.2;
   
