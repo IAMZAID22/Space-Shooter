@@ -130,6 +130,36 @@ function draw(){
     as3.y = 0;
     as3.veloctyY = 9;
   }
+  if(as1.isTouching(b2)){
+     as1.x = (Math.round(random(0,800)))
+    as1.y = 0;
+    as1.veloctyY = 9;
+  }
+  if(as2.isTouching(b2)){
+     as2.x = (Math.round(random(0,800)))
+    as2.y = 0;
+    as2.veloctyY = 9;
+  }
+  if(as3.isTouching(b2)){
+     as3.x = (Math.round(random(0,800)))
+    as3.y = 0;
+    as3.veloctyY = 9;
+  }
+  if(as1.isTouching(b3)){
+     as1.x = (Math.round(random(0,800)))
+    as1.y = 0;
+    as1.veloctyY = 9;
+  }
+  if(as2.isTouching(b3)){
+     as2.x = (Math.round(random(0,800)))
+    as2.y = 0;
+    as2.veloctyY = 9;
+  }
+  if(as3.isTouching(b3)){
+     as3.x = (Math.round(random(0,800)))
+    as3.y = 0;
+    as3.veloctyY = 9;
+  }
 pla.collide(b2);
    pla.collide(b3);
  }
