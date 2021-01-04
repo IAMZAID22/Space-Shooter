@@ -71,7 +71,7 @@ function draw(){
     as3.x = (Math.round(random(0)))
     as3.y = 0;
   }
-   if (keyDown("space") || mouseDown){
+   if (keyDown("space")){
     bl1.visible = true;
     bl1.x = pla.x;
     bl1.y = pla.y;
