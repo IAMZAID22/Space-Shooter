@@ -107,7 +107,7 @@ function draw(){
     pla2.x = pla2.x -10;
   }
   if(keyDown("d")){
-    pla.x = pla.x +10;
+    pla2.x = pla2.x +10;
   }
   if(as1.isTouching(bl1)|| as1.isTouching(bl2)){
     as1.x = (Math.round(random(0,800)))
