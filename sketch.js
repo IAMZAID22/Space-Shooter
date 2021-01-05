@@ -1,4 +1,4 @@
-var pla,pla2,plI,plI1,as1,as2,as3,as,bl1,hp,hp2,bg,b1,b2,b3,bl2;
+var pla,pla2,plI,plI1,as1,as2,as3,as,bl1,hp,hp2,bg,b1,b2,b3,bl2,GameState  = END,PLAY,END;
 function preload(){
 plI = loadImage("spaceship.png");
 plI1 = loadImage("spaceshipq.png");
@@ -55,7 +55,11 @@ function draw(){
   text("HP:"+hp,20,50);
   text("HP:"+hp2,700,50);
   
- if(hp >=1){
+if(keyDown("space")){
+ GameState = PLAY;
+}
+ if(GameState === PLAY){
+  if(hp >=1){
   
   if(as1.isTouching(as2)){
     as1.x = (Math.round(random(0)))
@@ -171,6 +175,7 @@ function draw(){
      as3.x = (Math.round(random(0,800)))
     as3.y = 0;
     as3.veloctyY = 9;
+  }
   }
 pla.collide(b2);
    pla.collide(b3);
