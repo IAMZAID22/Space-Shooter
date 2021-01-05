@@ -59,7 +59,7 @@ if(keyDown("space")){
  GameState = PLAY;
 }
  if(GameState === PLAY){
-  if(hp >=1){
+  if(hp >=1 && hp2 >=1){
   
   if(as1.isTouching(as2)){
     as1.x = (Math.round(random(0)))
