@@ -181,6 +181,8 @@ pla.collide(b2);
    pla.collide(b3);
    pla2.collide(b2);
    pla2.collide(b3);
+  pla.collide(pla2);
+  pla2.collide(pla);
  }
   drawSprites();
 }
