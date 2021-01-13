@@ -1,4 +1,4 @@
-var pla,pla2,plI,plI1,as1,as2,as3,as,bl1,hp,hp2,bg,b1,b2,b3,bl2,GameState  = END,PLAY,END;
+var pla,pla2,plI,plI1,as1,as2,as3,as,bl1,hp,hp2,bg,b1,b2,b3,bl2,GameState  = END,PLAY,END,score;
 function preload(){
 plI = loadImage("spaceship.png");
 plI1 = loadImage("spaceshipq.png");
@@ -42,11 +42,16 @@ hp = 10;
   b2 = createSprite(1,300,1,600);
   b3 = createSprite(799,300,1,600);
   
+ score = 0;
+ 
 }
 
 
 function draw(){
   background(bg);
+ textSize(25);
+ fill("white");
+ text("Score"+score,400,50);
   as1.velocityY = 9;
   as2.velocityY = 9;
   as3.velocityY = 9;
@@ -116,14 +121,17 @@ if(keyDown("space")){
   if(as1.isTouching(bl1)|| as1.isTouching(bl2)){
     as1.x = (Math.round(random(0,800)))
     as1.y = 0;
+   score = score+1;
   }
   if(as2.isTouching(bl1)|| as2.isTouching(bl2)){
     as2.x = (Math.round(random(0,800)))
     as2.y = 0;
+   score = score+1;
   }
   if(as3.isTouching(bl1)||as3.isTouching(bl2)){
     as3.x = (Math.round(random(0,800)))
     as3.y = 0;
+   score = score+1;
   }
   if(pla.isTouching(as1)){
     hp = hp -1;
