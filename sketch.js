@@ -51,7 +51,7 @@ function draw(){
   background(bg);
  textSize(25);
  fill("white");
- text("Score"+score,400,50);
+ text("Score: "+score,400,50);
   as1.velocityY = 9;
   as2.velocityY = 9;
   as3.velocityY = 9;
